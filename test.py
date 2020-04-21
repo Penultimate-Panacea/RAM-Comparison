@@ -1,6 +1,14 @@
 name = input("Name: ")
-cas = input("CAS Timing: ")
-speed = int(input("RAM Speed in MHz: "))
+try:
+    cas = int(input("CAS Timing: "))
+except ValueError:
+    print("Please enter a base 10 number. This message will only appear once.")
+    cas = int(input("CAS Timing: "))
+try:
+    speed = int(input("RAM Speed in MHz: "))
+except ValueError:
+    print("Please enter a base 10 number. This message will only appear once.")
+    speed = int(input("RAM Speed in MHz: "))
 speed *= 1000000  # Convert to hertz
 val1 = speed / 2  # DDR
 val2 = 1/val1  # Invert of DDR
