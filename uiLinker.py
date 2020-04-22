@@ -2,7 +2,7 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from decimal import Decimal
 
-qtcreator_file  = "qt/mainwindow.ui" # Enter file here.
+qtcreator_file  = "mainwindow.ui" # Enter file here.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtcreator_file)
 
 
