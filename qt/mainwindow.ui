@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>368</width>
-    <height>293</height>
+    <width>600</width>
+    <height>376</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,9 +20,9 @@
    <widget class="QLabel" name="casLabel">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>61</width>
+      <x>9</x>
+      <y>251</y>
+      <width>59</width>
       <height>16</height>
      </rect>
     </property>
@@ -33,10 +33,10 @@
    <widget class="QSpinBox" name="casSpinBox">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>40</y>
-      <width>42</width>
-      <height>22</height>
+      <x>74</x>
+      <y>251</y>
+      <width>33</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -49,9 +49,9 @@
    <widget class="QLineEdit" name="nameEntry">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>10</y>
-      <width>113</width>
+      <x>74</x>
+      <y>225</y>
+      <width>133</width>
       <height>20</height>
      </rect>
     </property>
@@ -59,9 +59,9 @@
    <widget class="QLabel" name="nameLabel">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>61</width>
+      <x>9</x>
+      <y>225</y>
+      <width>56</width>
       <height>16</height>
      </rect>
     </property>
@@ -72,10 +72,10 @@
    <widget class="QComboBox" name="freqComboBox">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>70</y>
-      <width>69</width>
-      <height>22</height>
+      <x>74</x>
+      <y>277</y>
+      <width>50</width>
+      <height>20</height>
      </rect>
     </property>
     <item>
@@ -137,8 +137,8 @@
    <widget class="QLabel" name="freqLabel">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>70</y>
+      <x>9</x>
+      <y>277</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -147,14 +147,61 @@
      <string>Frequency</string>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="speedLCD">
+   <widget class="QPushButton" name="calculateButton">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>100</y>
-      <width>71</width>
-      <height>41</height>
+      <x>9</x>
+      <y>303</y>
+      <width>85</width>
+      <height>23</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>Calculate Speed</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>74</x>
+      <y>9</y>
+      <width>264</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string># RAM Speed Comparator</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::MarkdownText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="speedLcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>290</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>true</bool>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+    <property name="value" stdset="0">
+     <double>2.500000000000000</double>
     </property>
    </widget>
   </widget>
@@ -163,7 +210,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>368</width>
+     <width>600</width>
      <height>21</height>
     </rect>
    </property>
