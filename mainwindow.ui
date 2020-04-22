@@ -57,6 +57,12 @@
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
+    <property name="minimum">
+     <number>3</number>
+    </property>
+    <property name="maximum">
+     <number>22</number>
+    </property>
     <property name="value">
      <number>12</number>
     </property>
@@ -98,12 +104,37 @@
     </property>
     <item>
      <property name="text">
+      <string>333</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>533</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>667</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>800</string>
      </property>
     </item>
     <item>
      <property name="text">
       <string>1066</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1200</string>
      </property>
     </item>
     <item>
@@ -118,7 +149,22 @@
     </item>
     <item>
      <property name="text">
+      <string>1800</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>1866</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2100</string>
      </property>
     </item>
     <item>
@@ -128,7 +174,27 @@
     </item>
     <item>
      <property name="text">
+      <string>2200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2250</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2333</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>2400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2500</string>
      </property>
     </item>
     <item>
@@ -138,7 +204,17 @@
     </item>
     <item>
      <property name="text">
+      <string>2666</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>2800</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2933</string>
      </property>
     </item>
     <item>
@@ -148,7 +224,117 @@
     </item>
     <item>
      <property name="text">
+      <string>3100</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>3200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3333</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3466</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3666</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3733</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3800</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3866</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4133</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4266</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4700</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4800</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4866</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5000</string>
      </property>
     </item>
    </widget>
