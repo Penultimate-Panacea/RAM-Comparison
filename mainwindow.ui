@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>376</height>
+    <height>333</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QLabel" name="casLabel">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>251</y>
+      <x>19</x>
+      <y>141</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -33,8 +33,8 @@
    <widget class="QSpinBox" name="casSpinBox">
     <property name="geometry">
      <rect>
-      <x>74</x>
-      <y>251</y>
+      <x>90</x>
+      <y>140</y>
       <width>33</width>
       <height>20</height>
      </rect>
@@ -49,18 +49,21 @@
    <widget class="QLineEdit" name="nameEntry">
     <property name="geometry">
      <rect>
-      <x>74</x>
-      <y>225</y>
-      <width>133</width>
+      <x>90</x>
+      <y>120</y>
+      <width>141</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>placeholder</string>
     </property>
    </widget>
    <widget class="QLabel" name="nameLabel">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>225</y>
+      <x>20</x>
+      <y>120</y>
       <width>56</width>
       <height>16</height>
      </rect>
@@ -72,8 +75,8 @@
    <widget class="QComboBox" name="freqComboBox">
     <property name="geometry">
      <rect>
-      <x>74</x>
-      <y>277</y>
+      <x>90</x>
+      <y>160</y>
       <width>50</width>
       <height>20</height>
      </rect>
@@ -137,8 +140,8 @@
    <widget class="QLabel" name="freqLabel">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>277</y>
+      <x>20</x>
+      <y>160</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -150,8 +153,8 @@
    <widget class="QPushButton" name="calculateButton">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>303</y>
+      <x>150</x>
+      <y>160</y>
       <width>85</width>
       <height>23</height>
      </rect>
@@ -160,11 +163,11 @@
      <string>Calculate Speed</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="titleLabel">
     <property name="geometry">
      <rect>
-      <x>74</x>
-      <y>9</y>
+      <x>180</x>
+      <y>10</y>
       <width>264</width>
       <height>27</height>
      </rect>
@@ -188,10 +191,10 @@
    <widget class="QLCDNumber" name="speedLcdNumber">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>290</y>
-      <width>141</width>
-      <height>51</height>
+      <x>130</x>
+      <y>190</y>
+      <width>101</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="smallDecimalPoint">
@@ -202,6 +205,77 @@
     </property>
     <property name="value" stdset="0">
      <double>2.500000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>221</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add to Compare List</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="speedLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Real Speed in nanoseconds</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QColumnView" name="comparedColumnView">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>120</y>
+      <width>256</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="newLabel">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>## New RAM</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::MarkdownText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="comparedLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>70</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>## Compared RAM</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::MarkdownText</enum>
     </property>
    </widget>
   </widget>

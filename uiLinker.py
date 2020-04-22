@@ -11,9 +11,10 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
-        self.speedLcdNumber.setDigitCount(8)
-        self.speedLcdNumber.display("00.00ns")
+        self.speedLcdNumber.setDigitCount(5)
+        self.speedLcdNumber.display("00.00")
         self.calculateButton.clicked.connect(self.calculate_speed)
+        self.addButton.clicked.connect(self.add_to_compare)
 
     def calculate_speed(self):
         cas = Decimal(self.casSpinBox.value())
@@ -27,6 +28,9 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.speedLcdNumber.display(disp_time)
         return
 
+    def add_to_compare(self):
+
+        return
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
