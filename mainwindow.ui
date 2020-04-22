@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -10,11 +13,23 @@
     <height>333</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Ram Compare</string>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="casLabel">
@@ -153,9 +168,9 @@
    <widget class="QPushButton" name="calculateButton">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>160</y>
-      <width>85</width>
+      <x>20</x>
+      <y>190</y>
+      <width>211</width>
       <height>23</height>
      </rect>
     </property>
@@ -192,7 +207,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>190</y>
+      <y>220</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -210,9 +225,9 @@
    <widget class="QPushButton" name="addButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>230</y>
-      <width>221</width>
+      <x>20</x>
+      <y>260</y>
+      <width>211</width>
       <height>23</height>
      </rect>
     </property>
@@ -224,7 +239,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>190</y>
+      <y>220</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -234,16 +249,6 @@
     </property>
     <property name="wordWrap">
      <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QColumnView" name="comparedColumnView">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>120</y>
-      <width>256</width>
-      <height>131</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="newLabel">
@@ -276,6 +281,16 @@
     </property>
     <property name="textFormat">
      <enum>Qt::MarkdownText</enum>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>221</width>
+      <height>161</height>
+     </rect>
     </property>
    </widget>
   </widget>
